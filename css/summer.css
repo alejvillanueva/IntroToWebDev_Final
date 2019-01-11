@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Antic');
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Antic', sans-serif;
+
+}
+
+header{
+position: fixed;
+background-color: black;
+color: white;
+text-align: center;
+width: 100%;
+height: 50px;
+overflow: hidden;
+z-index: 1;
+}
+
+header ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+header li{
+display: inline;
+margin: 0px;	
+}
+
+
+header nav a{
+transition: all .6s;
+margin: -2px;
+}
+
+li a{
+padding: 50px 5%;
+}
+
+
+a:link{
+color: white;
+text-decoration: none;
+}
+
+a:visited{
+color: white;
+text-decoration: none;
+}
+
+a:not(.logo):hover{
+color: white;
+background-color: #00caaa;
+}
+
+div.poem{
+width: 100%;
+padding-top: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.container{
+width: 100%;
+background-color: #fbfea8;
+margin: 0 auto;
+}
+
+.container p{
+padding: 0;
+}
+
+p{
+padding: 50px 5%;
+text-align: center;
+line-height: 2em;
+margin: 0;
+z-index: 1;
+}
+
+
+.pictures{
+width: 45%;
+padding: 25px;
+margin:  auto;
+}
+
+hr{
+margin: auto;
+height: 1px;
+background-color: grey;
+border-color: red;
+border: none;
+}
+
+.pictures img{
+width: 100%;
+height: auto;
+}
+
+#sun{
+position: fixed;
+left: 0px;
+top:  0px;
+width: 5px;
+}
+@media (max-width:960px){
+header{
+height: auto;
+position: relative;
+}
+
+header ul li{
+display: block;
+}
+
+li a{
+padding: 0 15px;
+} 
+
+header img{
+width: 13%;
+}
+
+div.poem{
+	padding-top: 0px;
+}
+
+#sun{
+z-index: -100;
+width: 3px;
+}
+
+
+
+}

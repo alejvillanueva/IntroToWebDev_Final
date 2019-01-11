@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Antic');
+
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: 'Antic', sans-serif;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	.container{
+		position: relative;
+	}
+
+	/*Pictures - Links*/
+	.winter{
+		width: 50%;
+		height: 50vh;
+		float: left;
+		background-image: url(../img/winter.jpg);
+		background-size: cover;                  
+	    background-repeat: no-repeat;
+    	background-position: center center;
+	}
+	
+	.spring{
+		width: 50%;
+		height: 50vh;
+		float: left;
+		background-image: url(../img/spring.jpg);
+		background-size: cover;                  
+	    background-repeat: no-repeat;
+    	background-position: center center;
+
+	}
+
+	.summer{
+		width: 50%;
+		height: 50vh;
+		float: left;
+		background: url(../img/summer.jpg);
+		background-size: cover;                  
+	    background-repeat: no-repeat;
+    	background-position: center center;
+	}
+
+	.autumn{
+		width: 50%;
+		height: 50vh;
+		float: left;
+		background: url(../img/autumn.jpg);
+		background-size: cover;                  
+	    background-repeat: no-repeat;
+    	background-position: center center;
+
+	}
+
+	.p{
+		width: 100%;
+		height: 100%;
+		font-size: 2.5em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: white;
+	}
+	.p:hover{
+		background: rgba(0,0,0,.3);
+	}
+	
+	.p > p{
+		flex: 1 1;
+	}
+
+	
+	/*Modal*/
+    .infoModal {
+    	display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 99999;
+        opacity: 0;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+    
+    .infoModal:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    .infoModal > div {
+      	width: 35%;
+      	height: 35%;
+        position: relative;
+        background: white;
+        margin: auto auto;
+        padding: 15px;
+
+
+	}
+   
+	div.infoModal p{
+		text-align: center;
+		padding-top: 7px;
+		line-height: 2em;
+		font-size: 15px;
+	}
+
+	div.infoModal h1 {
+		text-align: center;
+		padding-top: 10%;
+	}
+
+    .close {
+        width: 50px;
+        height: 20px;
+        color: black;
+        position: absolute;
+        right: 5px;
+        text-align: center;
+        bottom: 5px;
+        text-decoration: none;
+    }
+    
+    .close:hover {
+        background: black;
+        color: white;
+    }
+	
+	.divinfo{
+		position: absolute;
+		top:  43vh;
+		left: 45vw;
+		width: 150px;
+		height: 100px;
+		z-index: 10px;		
+	}
+	
+	.divinfo:hover{
+		background-color: black;
+		}
+
+	@media only screen and (max-width: 767px) {
+		.divinfo{
+			width: 20%;
+			margin: auto auto;
+			left: 40%;
+		}
+
+		.divinfo:hover{
+			background-color: transparent;
+		}
+		div.infoModal p{
+		font-size: 11px;
+		}
+
+		div.infoModal h1 {
+		padding-top: 1%;
+		font-size: 10px;
+		}
+	}
